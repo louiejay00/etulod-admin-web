@@ -148,8 +148,8 @@ function App() {
   );
 
   useEffect(() => {
-    // axios.defaults.baseURL = process.env.BACKEND_URL;
-    axios.defaults.baseURL = "http://localhost:5000";
+    axios.defaults.baseURL = process.env.BACKEND_URL;
+    // axios.defaults.baseURL = "http://localhost:5000";
   }, []);
   console.log({ auth });
   if (!auth) {
