@@ -17,7 +17,6 @@ import {
   import DeleteForeverIcon from "@material-ui/icons/DeleteForever";
   import axios from "axios";
   import { Box } from "@mui/system";
-  import { palette } from '@material-ui/system';
   
   
   export default function UserFeedbackPage() {

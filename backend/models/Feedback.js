@@ -1,8 +1,8 @@
 const mongoose = require('mongoose')
 
 const FeedbackSchema = new mongoose.Schema({
-  name: String,
-  email: String,
+  userName: String,
+  userEmail: String,
   feedback: String,
 })
 
