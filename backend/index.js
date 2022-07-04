@@ -1,4 +1,4 @@
-const port =  3000;
+const port =  5000;
 const express = require('express');
 const cors= require('cors');
 const app = express();
@@ -10,6 +10,7 @@ const logsRoute = require("./router/logs.js");
 const queueRoute = require("./router/queue");
 const adminRoute = require("./router/admin");
 const processRoute = require("./router/process");
+const feedbackRoute = require("./router/feedback");
 
 app.use(express.json());
 app.use(cors());
@@ -66,4 +67,5 @@ app.use("/log", logsRoute);
 app.use("/process", processRoute);
 app.use("/queue", queueRoute);
 app.use("/admin", adminRoute);
+app.use("/feedback", feedbackRoute);
 app.listen(port, () => console.log("Running on port 5000"));
