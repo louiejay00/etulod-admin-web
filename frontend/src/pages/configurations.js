@@ -150,7 +150,7 @@ const TransportationReportsTable = ({
 
   const fetchData = () => {
     axios
-      .get("http://localhost:5000/process")
+      .get("https://etulod-admin-backend.herokuapp.com/process")
       .then((res) => {
         setReports(res.data.map(obj => {
           const newObj = {...obj, id: obj._id}
